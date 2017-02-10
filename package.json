@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/aristov/xmldatasheet#readme",
   "dependencies": {
-    "ariamodule": "0.0.2",
-    "dommodule": "0.0.1",
+    "ariamodule": "aristov/ariamodule",
+    "dommodule": "aristov/dommodule",
     "htmlmodule": "^0.4.3"
   },
   "devDependencies": {

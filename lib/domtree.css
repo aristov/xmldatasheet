@@ -1,0 +1,32 @@
+body
+{
+    font: 15px "Courier New", Courier, monospace;
+    padding: 10px;
+    background: #aaa;
+}
+
+.domtree .treeitem
+{
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5)
+}
+.domtree .treeitem > .group
+{
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.domtree .treeitem[aria-expanded=false] > .group::after
+{
+    content: '...';
+    text-align: center;
+    display: block;
+    padding: 0 0 5px;
+}
+.domtree .treeitem[aria-expanded=false] .treeitem
+{
+    display: none;
+}

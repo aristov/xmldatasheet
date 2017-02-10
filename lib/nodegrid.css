@@ -1,0 +1,35 @@
+.grid .rowheader
+{
+    padding: 20px 60px 20px 20px;
+}
+
+.grid .columnheader
+{
+    font-weight: normal;
+    /*min-width: 220px;*/
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.grid .gridcell
+{
+    position: relative;
+    padding: 0 30px;
+    /*min-width: 220px;*/
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+}
+.grid .gridcell > input
+{
+    font: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
