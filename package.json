@@ -1,0 +1,39 @@
+{
+  "name": "xmldatasheet",
+  "version": "0.0.0",
+  "description": "XML database web interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristov/xmldatasheet.git"
+  },
+  "keywords": [
+    "xml",
+    "dom",
+    "html",
+    "aria",
+    "database",
+    "interface",
+    "grid",
+    "tree",
+    "nodegrid",
+    "domtree"
+  ],
+  "author": "Vyacheslav Aristov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aristov/xmldatasheet/issues"
+  },
+  "homepage": "https://github.com/aristov/xmldatasheet#readme",
+  "dependencies": {
+    "ariamodule": "0.0.2",
+    "dommodule": "0.0.1",
+    "htmlmodule": "^0.4.3"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
