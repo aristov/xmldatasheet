@@ -2,7 +2,7 @@ import { domTree } from '../lib/domtree'
 
 const parser = new DOMParser
 
-fetch('data/data.xml')
+fetch('test/data/data.xml')
     .then(res => res.text())
     .then(xml => parser.parseFromString(xml, 'text/xml'))
     .then(doc => domTree({
