@@ -4,7 +4,8 @@
   "description": "XML database web interface",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "webpack -w"
   },
   "repository": {
     "type": "git",
