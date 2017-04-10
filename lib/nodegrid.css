@@ -24,12 +24,26 @@
 {
     font: inherit;
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 0;
-    bottom: 0;
-    left: 0;
+    bottom: -2px;
+    left: -2px;
     width: 100%;
     border: 0;
-    padding: 0;
     text-align: center;
+}
+.grid .gridcell > input:not([hidden])
+{
+    display: block;
+}
+.grid .gridcell > .text
+{
+    display: block;
+    min-width: 50px;
+    min-height: 1rem;
+}
+.grid .gridcell > .text[hidden]
+{
+    display: block;
+    visibility: hidden;
 }

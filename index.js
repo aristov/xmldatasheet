@@ -1,1 +1,1 @@
-import './test/htmlfetch'
+import './test/xmlfetch'
