@@ -7,10 +7,12 @@ body
 
 .domtree .treeitem
 {
+    position: relative;
     padding: 10px;
     margin: 10px;
     background: white;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5)
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 .domtree .treeitem > .group
 {
@@ -29,4 +31,9 @@ body
 .domtree .treeitem[aria-expanded=false] .treeitem
 {
     display: none;
+}
+
+.domtree .nodegrid
+{
+    display: inline-table;
 }

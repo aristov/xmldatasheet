@@ -1,0 +1,121 @@
+RDF
+{
+    font: 18px sans-serif;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+Ontology
+{
+    display: block;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px 5px;
+}
+
+Ontology > title
+{
+    display: block;
+    font-size: 24px;
+    padding: 5px;
+    margin: 10px 0;
+}
+Ontology > description
+{
+    display: block;
+    padding: 5px;
+}
+Ontology > creator,
+Ontology > modified,
+Ontology > issued,
+Ontology > preferredNamespacePrefix,
+Ontology > preferredNamespaceUri,
+Ontology > versionInfo
+{
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}
+Ontology > *::before
+{
+    font-weight: normal;
+}
+Ontology > creator::before
+{
+    content: 'Creator: '
+}
+Ontology > modified::before
+{
+    content: 'Modified: '
+}
+Ontology > issued::before
+{
+    content: 'Issued: '
+}
+Ontology > preferredNamespacePrefix::before
+{
+    content: 'Preferred namespace prefix: '
+}
+Ontology > preferredNamespaceUri::before
+{
+    content: 'Preferred namespace URI: '
+}
+Ontology > versionInfo::before
+{
+    content: 'Version info: '
+}
+
+
+RDF > *:not(Ontology)
+{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    width: 45%;
+    vertical-align: top;
+}
+RDF > *:not(Ontology):not(h2):hover
+{
+    background: rgba(0, 0, 0, 0.05)
+}
+
+RDF > h2
+{
+    font-size: 20px;
+    display: block;
+    /*font-weight: normal;*/
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+label
+{
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+label[aria-hidden=true]
+{
+    display: none;
+}
+
+comment
+{
+    display: block;
+}
+
+subClassOf
+{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+/*subClassOf::before
+{
+    content: 'subClassOf: '
+}*/
+subClassOf::after
+{
+    content: attr(resource)
+}
