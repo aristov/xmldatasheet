@@ -119,3 +119,8 @@ subClassOf::after
 {
     content: attr(resource)
 }
+
+a:not(:hover)
+{
+    text-decoration: none;
+}
