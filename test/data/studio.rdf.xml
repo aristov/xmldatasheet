@@ -8,6 +8,7 @@
          xmlns:vann="http://purl.org/vocab/vann/"
          xmlns:pto="http://www.productontology.org/id/"
          xmlns:studio="http://aristov.github.io/studio/ns#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
          xmlns:xhtml="http://www.w3.org/1999/xhtml"
          xml:lang="en">
 
