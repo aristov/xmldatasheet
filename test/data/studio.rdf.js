@@ -1,12 +1,7 @@
-const { forEach, reduce } = Array.prototype
+const { forEach } = Array.prototype
+const { attributes } = document.documentElement
 const labels = document.querySelectorAll('label')
 const subClassOfs = document.querySelectorAll('subClassOf')
-const RE = /^.*#/
-const attributes = document.documentElement.attributes
-const xmlns = reduce.call(attributes, (res, { localName, value }) => {
-    res[value] = localName
-    return res
-}, {})
 forEach.call(labels, node => {
     if(node.hasAttribute('xml:lang')) {
         node.setAttribute('aria-hidden', 'true')
@@ -16,7 +11,7 @@ forEach.call(labels, node => {
         const link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
         const pair = uri.split('#')
         link.href = uri
-        link.textContent = xmlns[pair[0] + '#'] + ':' + pair[1]
+        link.textContent = node.lookupPrefix(pair[0] + '#') + ':' + pair[1]
         const { parentNode, nextSibling } = node
         parentNode.insertBefore(new Text(' '), nextSibling)
         parentNode.insertBefore(link, nextSibling)
@@ -27,7 +22,7 @@ forEach.call(subClassOfs, node => {
     const link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
     const pair = uri.split('#')
     link.href = uri
-    link.textContent = xmlns[pair[0] + '#'] + ':' + pair[1]
+    link.textContent = node.lookupPrefix(pair[0] + '#') + ':' + pair[1]
     node.appendChild(new Text(node.nodeName + ': '))
     node.appendChild(link)
 })
