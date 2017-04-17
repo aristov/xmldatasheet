@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xml:lang="en"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:rooms="http://vocab.deri.ie/rooms#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/terms/">
+    <org:Organization rdf:about="http://fusion1905.ru/studio#">
+        <foaf:name>Fusion</foaf:name>
+        <foaf:name xml:lang="ru">Фьюжн</foaf:name>
+        <org:purpose>Music and technology</org:purpose>
+        <org:purpose xml:lang="ru">Музыка и технология</org:purpose>
+        <org:member rdf:resource="http://fusion1905.ru/person#ai.uschakova"/>
+        <org:member rdf:resource="http://fusion1905.ru/person#av.aristov"/>
+        <org:member rdf:resource="http://fusion1905.ru/person#vv.aristov"/>
+    </org:Organization>
+    <rooms:Building rdf:about="http://fusion1905.ru/studio#building">
+        <geo:lat>55.762576</geo:lat>
+        <geo:long>37.552624</geo:long>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#studio"/>
+    </rooms:Building>
+    <rooms:FloorSection rdf:about="http://fusion1905.ru/studio#studio">
+        <rooms:occupant rdf:resource="http://fusion1905.ru/studio#"/>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#piano"/>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#forte"/>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#sol"/>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#fa"/>
+        <rooms:contains rdf:resource="http://fusion1905.ru/studio#neo"/>
+    </rooms:FloorSection>
+    <rooms:Room rdf:about="http://fusion1905.ru/studio#piano">
+        <dc:title>Piano</dc:title>
+        <dc:title xml:lang="ru">Пиано</dc:title>
+    </rooms:Room>
+    <rooms:Room rdf:about="http://fusion1905.ru/studio#forte">
+        <dc:title>Forte</dc:title>
+        <dc:title xml:lang="ru">Форте</dc:title>
+    </rooms:Room>
+    <rooms:Room rdf:about="http://fusion1905.ru/studio#sol">
+        <dc:title>Sol</dc:title>
+        <dc:title xml:lang="ru">Соль</dc:title>
+    </rooms:Room>
+    <rooms:Room rdf:about="http://fusion1905.ru/studio#fa">
+        <dc:title>Fa</dc:title>
+        <dc:title xml:lang="ru">Фа</dc:title>
+    </rooms:Room>
+    <rooms:Room rdf:about="http://fusion1905.ru/studio#neo">
+        <dc:title>Neo</dc:title>
+        <dc:title xml:lang="ru">Нео</dc:title>
+    </rooms:Room>
+</rdf:RDF>
