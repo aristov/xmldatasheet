@@ -196,6 +196,14 @@
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticInstrument"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
+    <owl:Class rdf:about="http://aristov.github.io/studio/ns#Ukulele">
+        <rdfs:label>Ukulele</rdfs:label>
+        <rdfs:label xml:lang="ru">Укулеле</rdfs:label>
+        <rdfs:comment>Any kind of a ukulele</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#StringInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticInstrument"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Sitar">
         <rdfs:label>Sitar</rdfs:label>
         <rdfs:label xml:lang="ru">Ситар</rdfs:label>
